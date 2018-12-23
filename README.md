@@ -6,7 +6,24 @@ A baseline installation of a Linux server using [Amazon Lightsail](https://light
 ## Overview:
 This project emphasizes how to access, secure, perform the initial configuration of a bare-bones Linux server and how to install and configure a web and database server and actually host a web application.
 
+## How to start?
+1. Sign up [Amazon Lightsail](https://lightsail.aws.amazon.com/ls/webapp/)
+2. Create Ubuntu Linux server instance by choosing:
+	* OS Only
+	* Ubuntu 16.04 LTS 
+3. Choose your instance plan:
+	* The lowest membership is enough for this project
+4. Give your instance a hostname
+5. Wait for it to start up
+6. Once it runs:
+	* Copy your public id
 
+## Follow the following steps to configure your instance:
+1. Launch Virtual Machine and SSH into the Server
+	* In your local machine:
+		* Download the private key form Networking part which starts with "LightsailDefaultKey" and with ".pem" extention, rename the file to "Lightsail_Key.rsa " and save it in `~/.ssh/`
+		* Change the permission: `chmod 600 ~/.ssh/Lightsail_key.rsa`
+		* SHH to your serve rby using Ubuntu User `ssh -i ~/.ssh/Lightsail_Key.rsa -p 2200 ubuntu@54.93.239.136`
 
 
 
